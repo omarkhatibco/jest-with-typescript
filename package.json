@@ -20,11 +20,6 @@
 			"ignorePath": "./.gitignore"
 		}
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"lint-staged": {
 		"**/*.+(js|ts|tsxjson|css|html|md)": [
 			"prettier",
