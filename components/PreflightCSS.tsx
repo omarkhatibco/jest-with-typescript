@@ -1,6 +1,6 @@
 import { CSSReset } from '@chakra-ui/core';
 import { css, Global } from '@emotion/core';
-import { customConfig } from 'theme.config';
+import { customConfig } from '@theme.config';
 
 export const PreflightCSS: React.FC = () => {
 	return (

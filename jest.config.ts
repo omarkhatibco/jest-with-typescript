@@ -7,6 +7,9 @@ export default {
 	transform: {
 		'^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
 	},
-	moduleDirectories: ['<rootDir>', 'node_modules'],
+	moduleDirectories: ['.', '<rootDir>', 'node_modules'],
 	transformIgnorePatterns: ['/node_modules/'],
+	moduleNameMapper: {
+		'^@(.*)$': '<rootDir>$1',
+	},
 };
