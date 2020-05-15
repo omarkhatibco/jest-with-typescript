@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import { Button } from '@chakra-ui/core';
 
 const Page: NextPage = () => {
 	return (
@@ -11,7 +10,6 @@ const Page: NextPage = () => {
 			</Head>
 
 			<main>
-				<Button variantColor='blue'>Hi</Button>
 				<h1 className='title'>
 					Welcome to <a href='https://nextjs.org'>Next.js!</a>
 				</h1>

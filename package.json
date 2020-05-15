@@ -1,69 +1,30 @@
 {
-	"name": "jest-with-typescript",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|html|md)\"",
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"start-node": "node server.js",
-		"test": "jest",
-		"test:update": "jest --updateSnapshot",
-		"test:watch": "jest --watch",
-		"test:cov": "jest --coverage",
-		"test:ci": "jest --ci"
-	},
-
-	"lint-staged": {
-		"**/*.+(js|ts|tsxjson|css|html|md)": [
-			"prettier",
-			"jest --findRelatedTests",
-			"git add"
-		]
-	},
-	"dependencies": {
-		"@chakra-ui/core": "^0.7.0",
-		"@emotion/core": "^10.0.28",
-		"@emotion/styled": "^10.0.27",
-		"deck.gl": "^8.1.5",
-		"emotion-theming": "^10.0.27",
-		"framer-motion": "^1.10.3",
-		"next": "9.4.0",
-		"react": "16.13.1",
-		"react-dom": "16.13.1",
-		"react-hook-form": "^5.7.2",
-		"react-map-gl": "^5.2.5",
-		"react-query": "^1.4.3",
-		"react-query-devtools": "^1.1.5",
-		"react-use": "^14.2.0",
-		"react-vis": "^1.11.7"
-	},
-	"devDependencies": {
-		"@testing-library/jest-dom": "^5.7.0",
-		"@testing-library/react": "^10.0.4",
-		"@testing-library/react-hooks": "^3.2.1",
-		"@testing-library/user-event": "^10.2.0",
-		"@types/jest": "^25.2.1",
-		"@types/node": "^14.0.1",
-		"@types/react": "^16.9.35",
-		"@types/react-dom": "^16.9.8",
-		"@types/react-query": "^1.1.2",
-		"@typescript-eslint/eslint-plugin": "^2.33.0",
-		"@typescript-eslint/parser": "^2.33.0",
-		"babel-jest": "^26.0.1",
-		"eslint": "^7.0.0",
-		"eslint-config-prettier": "^6.11.0",
-		"eslint-plugin-prettier": "^3.1.3",
-		"eslint-plugin-react": "^7.20.0",
-		"eslint-plugin-react-hooks": "^4.0.1",
-		"husky": "^4.2.5",
-		"jest": "^26.0.1",
-		"jest-emotion": "^10.0.32",
-		"jest-runner-eslint": "^0.8.0",
-		"lint-staged": "^10.2.2",
-		"prettier": "^2.0.5",
-		"typescript": "^3.9.2"
-	}
+  "name": "jest-with-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:update": "jest --updateSnapshot",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:ci": "jest --ci"
+  },
+  "dependencies": {
+    "next": "9.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.0.4",
+    "@types/jest": "^25.2.2",
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "typescript": "^3.9.2"
+  }
 }
