@@ -1,15 +1,13 @@
-console.log('hwewz');
-
-export default {
+module.exports = {
 	collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
-	setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+	setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 	testPathIgnorePatterns: ['/node_modules/', '/.next/'],
 	transform: {
 		'^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
 	},
-	moduleDirectories: ['.', '<rootDir>', 'node_modules'],
+	moduleDirectories: ['.', 'node_modules'],
 	transformIgnorePatterns: ['/node_modules/'],
-	moduleNameMapper: {
-		'^@(.*)$': '<rootDir>$1',
-	},
+	// moduleNameMapper: {
+	// 	'^@(.*)$': '<rootDir>$1',
+	// },
 };

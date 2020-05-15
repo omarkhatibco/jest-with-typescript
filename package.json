@@ -15,11 +15,7 @@
 		"test:cov": "jest --coverage",
 		"test:ci": "jest --ci"
 	},
-	"jest-runner-eslint": {
-		"cliOptions": {
-			"ignorePath": "./.gitignore"
-		}
-	},
+
 	"lint-staged": {
 		"**/*.+(js|ts|tsxjson|css|html|md)": [
 			"prettier",
